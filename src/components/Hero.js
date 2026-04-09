@@ -1,14 +1,15 @@
 "use client";
 
 import { useState, useRef, useEffect } from 'react';
+import BASE_PATH from "@/lib/basePath";
 
 export default function Hero() {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const videoRef = useRef(null);
 
   const videos = [
-    '/videos/anemico-vid.mov',
-    '/videos/healthy-vid.mov'
+    'hemai/videos/anemico-vid.mov',
+    'hemai/videos/healthy-vid.mov'
   ];
 
   useEffect(() => {
