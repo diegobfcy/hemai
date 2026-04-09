@@ -1,5 +1,5 @@
-:HL["/hemai/_next/static/chunks/0nz16v5i9c_4~.css","style"]
+:HL["/hemai/_next/static/chunks/0.2j.yeu01ye3.css","style"]
 :HL["/hemai/images/ucsm.jpeg ","image"]
 :HL["/hemai/images/cerro-verde.jpeg ","image"]
 :HL["/hemai/images/tech.jpeg ","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"l_sXFd1AMvM9OXqh8tWWD"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"erevU8m5iq-V_xwmz0eqQ"}
