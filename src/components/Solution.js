@@ -30,6 +30,7 @@ const pillars = [
     desc:  'Built for the constraints of our region: affordable, portable, minimal training required, and adaptable to multiple diseases.',
   },
 ]
+import BASE_PATH from "@/lib/basePath";
 
 export default function Solution() {
   return (
