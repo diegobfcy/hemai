@@ -8,8 +8,8 @@ export default function Hero() {
   const videoRef = useRef(null);
 
   const videos = [
-    'hemai/videos/anemico-vid.mov',
-    'hemai/videos/healthy-vid.mov'
+    `${BASE_PATH}/videos/anemico-vid.mov`,
+    `${BASE_PATH}/videos/healthy-vid.mov`
   ];
 
   useEffect(() => {
@@ -36,7 +36,6 @@ export default function Hero() {
       <div className="relative max-w-6xl mx-auto w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-          {/* Columna de Texto (Sin cambios) */}
           <div>
             <div className="afu inline-flex items-center gap-2 text-xs font-medium tracking-widest uppercase text-[#113368]
                             bg-[rgba(17,51,104,0.07)] border border-[rgba(17,51,104,0.1)] px-4 py-1.5 rounded-full mb-8">
@@ -89,25 +88,14 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Columna del Teléfono (Actualizada) */}
           <div className="afu d5 relative flex justify-center w-full">
-            
-            {/* Contenedor que dicta la forma del teléfono. Ajusta w-[280px] o w-[320px] según el tamaño deseado */}
             <div className="relative w-[280px] sm:w-[300px] aspect-[9/19.5]">
               <div className="absolute inset-0 rounded-[3rem] blur-3xl opacity-20 bg-[#113368]" />
-              
-              {/* Chasis exterior del dispositivo */}
               <div className="relative w-full h-full bg-[#0d1b2a] rounded-[2.5rem] p-2.5 shadow-2xl border border-white/10 flex flex-col">
-                
-                {/* Pantalla interior donde vive el video */}
                 <div className="relative w-full h-full bg-black rounded-[2rem] overflow-hidden pointer-events-none">
-                  
-                  {/* Pequeña pestaña "Notch" arriba para dar realismo de que es un smartphone */}
                   <div className="absolute top-2 left-1/2 -translate-x-1/2 w-20 h-6 bg-[#0d1b2a] rounded-full z-20 flex items-center justify-center shadow-sm">
                     <div className="w-8 h-1 rounded-full bg-white/10" />
                   </div>
-
-                  {/* Video ocupando toda la pantalla */}
                   <video
                     ref={videoRef}
                     src={videos[currentVideoIndex]}
@@ -115,14 +103,10 @@ export default function Hero() {
                     autoPlay
                     muted
                     playsInline
-                    /* object-cover asegura que el video se escale para cubrir todo el alto/ancho de la pantalla. Si un video es más grande, se recorta el excedente automáticamente. */
                     className="absolute inset-0 w-full h-full object-cover z-0"
                   />
-                  
                 </div>
               </div>
-              
-
             </div>
           </div>
 
