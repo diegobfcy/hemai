@@ -1,3 +1,5 @@
+import BASE_PATH from "@/lib/basePath";
+
 export default function Traction() {
   return (
     <section id="traction" className="relative py-24 px-6 overflow-hidden bg-[#113368]">
@@ -57,7 +59,7 @@ export default function Traction() {
               {/* Hover Image Background with Aesthetic Filters */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none z-0">
                 <img 
-                  src={m.image} 
+                  src={`${BASE_PATH}${m.image} `}
                   alt={m.title} 
                   className="absolute inset-0 w-full h-full object-cover grayscale mix-blend-luminosity opacity-40"
                 />

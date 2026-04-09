@@ -21,6 +21,8 @@ const team = [
     photo:    '/images/manchego.png',
   },
 ]
+import BASE_PATH from "@/lib/basePath";
+
 import Image from "next/image";
 export default function Team() {
   return (
@@ -47,16 +49,9 @@ export default function Team() {
           {team.map((member, i) => (
             <div key={i} className="group">
 
-              {/* Photo
-                  ── To use real photos:
-                  1. Save photos to /public/images/team-halley.jpg etc.
-                  2. Replace the placeholder div below with:
+
                      <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-5 bg-[#f1f5f9]">
-                       <Image src={member.photo} alt={member.name} fill style={{objectFit:'cover'}} />
-                     </div>
-              */}
-                     <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-5 bg-[#f1f5f9]">
-                       <Image src={member.photo} alt={member.name} fill style={{objectFit:'cover'}} />
+                       <Image src={`${BASE_PATH}${member.photo}`} alt={member.name} fill style={{objectFit:'cover'}} />
                      </div>
 
               <h3 className="font-medium text-[#0d1b2a] mb-0.5"

@@ -8,7 +8,7 @@ import Pricing    from '@/components/Pricing'
 import Team       from '@/components/Team'
 import Contact    from '@/components/Contact'
 import Footer     from '@/components/Footer'
-
+import BASE_PATH from "@/lib/basePath";
 export default function Home() {
   return (
     <>

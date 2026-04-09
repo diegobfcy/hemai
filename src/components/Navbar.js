@@ -1,6 +1,8 @@
 'use client'
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
+import BASE_PATH from "@/lib/basePath";
+
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -33,7 +35,7 @@ export default function Navbar() {
         ────────────────────────────────────────────────────────────────── */}
         <a href="#" className="shrink-0 flex items-center">
           <Image
-            src="/images/logo.png"
+            src={`${BASE_PATH}/images/logo.png`}
             alt="HemAI"
             width={120}
             height={36}

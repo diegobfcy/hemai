@@ -19,6 +19,7 @@ const steps = [
   },
 ]
 import Image from 'next/image'
+import BASE_PATH from "@/lib/basePath";
 export default function HowItWorks() {
   return (
     <section id="how" className="py-24 px-6 bg-[#f1f5f9]">
@@ -39,18 +40,8 @@ export default function HowItWorks() {
             No lab. No specialist. No waiting days.
           </p>
 
-          {/* ── IMAGE PLACEHOLDER ────────────────────────────────────────────
-              Replace this block with:
-
-              import Image from 'next/image'   <- add at top of file
-
-
-
-              Save image to: /public/images/device-in-use.jpg
-              Suggested: health worker using device in rural setting.
-          ──────────────────────────────────────────────────────────────── */}
               <div className="rounded-2xl overflow-hidden border border-[#dde3ea] aspect-[4/3] relative">
-                <Image src="/images/device-in-use.png"
+                <Image src={`${BASE_PATH}/images/device-in-use.png `}
                        alt="Health worker using HemAI"
                        fill style={{ objectFit: 'cover' }} />
               </div>

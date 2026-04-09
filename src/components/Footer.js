@@ -1,4 +1,5 @@
 import Image from "next/image";
+import BASE_PATH from "@/lib/basePath";
 export default function Footer() {
   const cols = [
     { title: 'Platform', links: ['How It Works', 'Features', 'Security', 'Integrations'] },
@@ -12,7 +13,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
           <div className="col-span-2 md:col-span-1">
 
-            <Image src="/images/logo-white.png" alt="HemAI" width={200} height={60} />
+            <Image src={`${BASE_PATH}/images/logo-white.png`} alt="HemAI" width={200} height={60} />
 
 
             <p className="text-xs font-light leading-relaxed max-w-[180px] mt-5">
