@@ -60,7 +60,7 @@ export default function Solution() {
 
         <div className="mb-16 rounded-2xl overflow-hidden aspect-video relative border border-[#dde3ea] bg-[#113368]/5">
         <video
-            src="/videos/solution.mp4"
+            src={`${BASE_PATH} /videos/solution.mp4`}
             autoPlay
             loop
             muted
