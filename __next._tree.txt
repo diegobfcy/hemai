@@ -2,4 +2,4 @@
 :HL["/images/ucsm.jpeg","image"]
 :HL["/images/cerro-verde.jpeg","image"]
 :HL["/images/tech.jpeg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"n8Nb_T0cAPIGRJxBjCwpY"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"QK9AfAEJndldU4Mfbjo3A"}
