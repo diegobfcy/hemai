@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 const plans = [
   {
-    name:     'NGO Access',
+    name:     'Pilot',
     desc:     'For NGOs and small health programs running community screenings.',
     monthly:  430,
     annual:   350,
@@ -21,7 +21,7 @@ const plans = [
     ctaHref: '#contact',
   },
   {
-    name:     'Health Institution',
+    name:     'Field',
     desc:     'For regional hospitals, health centers and public health programs.',
     monthly:  860,
     annual:   690,
@@ -42,7 +42,7 @@ const plans = [
     ctaHref: '#contact',
   },
   {
-    name:     'Government / Enterprise',
+    name:     'Government',
     desc:     'For regional health authorities, ministries and large-scale programs.',
     monthly:  null,
     annual:   null,
